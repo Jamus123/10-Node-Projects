@@ -130,4 +130,11 @@ router.post('/login', passport.authenticate('local',{
   req.flash('success', "You are logged in");
   res.redirect('/');
 });
+
+router.get('/logout', function(req,res){
+  req.logout();
+  req.flash('success', "You have logged out");
+  res.redirect('/users/login');
+});
+
 module.exports = router;
