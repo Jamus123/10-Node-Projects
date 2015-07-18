@@ -100,7 +100,7 @@ label{
   width: 180px;
 }
 
-input[type='text'], select, textarea{
+input[type='text'],input[type='email'],input select, textarea{
   padding: 3px;
   height: 20px;
   width: 200px;
@@ -147,4 +147,17 @@ footer{
   text-align: center;
   height: 30px;
   border-top: black;
+}
+
+.comment-form{
+  margin:30px 0;
+}
+.comment{
+  background: #ccc;
+  padding: 5px;
+  border: #666;
+  margin:15px 0 20px;
+}
+.comment-name{
+  font-weight: bold;
 }
