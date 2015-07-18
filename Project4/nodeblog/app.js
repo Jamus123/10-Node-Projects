@@ -1,23 +1,31 @@
 var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var expressValidator = require('express-validator')
-var cookieParser = require('cookie-parser');
-var session = require('express-session');
-var bodyParser = require('body-parser');
-var mongo = ('mongodb');
-var db = require('monk')('localhost/nodeblog');
-var multer = require('multer');
-var flash = require('connect-flash');
+    path = require('path'),
+    favicon = require('serve-favicon'),
+    logger = require('morgan'),
+    expressValidator = require('express-validator'),
+    cookieParser = require('cookie-parser'),
+    session = require('express-session'),
+    bodyParser = require('body-parser'),
+    vmongo = ('mongodb'),
+    db = require('monk')('localhost/nodeblog'),
+    multer = require('multer'),
+    flash = require('connect-flash');
 
-var routes = require('./routes/index');
-var posts = require('./routes/posts');
-var categories = require('./routes/categories');
+/* Don't forget to download Ckeditor and place in whole thing in public folder*/
+
+
+var routes = require('./routes/index'),
+    posts = require('./routes/posts'),
+    categories = require('./routes/categories');
 
 var app = express();
 
 app.locals.moment = require('moment');
+
+app.locals.truncateText = function(text, length){
+  return truncatedText = text.substring(0, length);
+
+}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

@@ -50,7 +50,7 @@ router.post('/add', function(req, res, next){
       "body" : body
     });
   }else{
-    var post = db.get('posts');
+    var posts = db.get('posts');
 
     //submit to DB
     posts.insert({
