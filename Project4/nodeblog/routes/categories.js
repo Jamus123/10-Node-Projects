@@ -5,16 +5,10 @@ var db = require('monk')('localhost/nodeblog');
 
 
 /* Homepage Blog posts*/
-router.get('/', function(req, res, next) {
-  var db = req.db;
-  var posts = db.get('posts');
-  posts.find({},{}, function(err, posts){
-    res.render('index',{
-      "posts" : posts,
-
-    });
-  });
-
+router.get('/add', function(req, res, next) {
+  res.render('addcategory', {
+    "title" : "Add Category"
+  })
 });
 
 module.exports = router;
