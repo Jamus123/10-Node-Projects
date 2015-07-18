@@ -87,7 +87,7 @@ a.more{
   padding: 20px;
 }
 
-.post img{
+.post img,.show img{
   width: 100%;
 }
 
@@ -121,7 +121,7 @@ textarea{
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
-  list-style:none;
+  list-style: none;
 }
 
 .alert-danger{
@@ -146,5 +146,5 @@ footer{
   margin-top: 40px;
   text-align: center;
   height: 30px;
-  border-top: #ccc;
+  border-top: black;
 }
