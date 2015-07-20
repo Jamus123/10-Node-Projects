@@ -32,7 +32,9 @@
     "passport-tumblr": "^0.1.x",
     "passport-twitter": "^1.x.x",
     "serve-static": "^1.9.x",
-    "underscore": "^1.x.x"
+    "underscore": "^1.x.x",
+    "connect-flash": "~0.1.1",
+    "express-messages": "0.0.2"
   },
   "devDependencies": {
     "bootstrap": "^3.x.x",

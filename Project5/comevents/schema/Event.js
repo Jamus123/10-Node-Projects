@@ -2,11 +2,10 @@
 
 exports = module.exports = function(app, mongoose) {
   var eventSchema = new mongoose.Schema({
-    _id: { type: String },
     name: { type: String, required: true},
     description: { type: String},
     venue: { type: String},
-    Date: { type: Date},
+    date: { type: Date},
     startTime: { type: String},
     endTime: { type: String},
     username: { type: String, required: true},
