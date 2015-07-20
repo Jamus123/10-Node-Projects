@@ -1,4 +1,2 @@
-#ignore these directories
 node_modules
 ckeditor
-uploads/*.jpg
