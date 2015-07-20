@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+public/vendor/*
+node_modules/*
+*.min.js
+*.min.js.map
+*.min.css
+/config.js
+.nodemonignore
+=======
+#ignore these directories
+node_modules
+ckeditor
+uploads/*.jpg
+>>>>>>> dad6ad088bb0e78573bffb2dce323e2325c82efa
